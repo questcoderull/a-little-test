@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer</title>
+
+    <style>
+      body {
+        margin-left: 50px;
+        font-family: sans-serif;
+      }
+      .container,
+      .inner {
+        width: 200px;
+        height: 200px;
+      }
+      .container {
+        border: 2px solid steelblue;
+        background-color: aquamarine;
+        margin-bottom: 10px;
+      }
+      .inner {
+        border: 2px solid brown;
+        background-color: palegoldenrod;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* display: none; */
+        /* transform: scale(0.25, 0.75); */
+        /* transform: rotate(45deg); */
+
+        /* ekshate koyekta transform property use korbo eivabe, niche khayal koro */
+
+        /* transform: scale(0.5) rotate(45deg) translateX(100px) translateY(-150px);*/
+      }
+
+      .inner:hover {
+        transform: rotate(45deg) scale(0.75, 0.75) translateX(100px)
+          translateY(-100px);
+      }
+
+      /* tested by my own */
+      /* .container:hover {
+        .inner:hover {
+          transform: rotate(45deg) scale(0.75, 0.75) translateX(100px)
+            translateY(-100px);
+        }
+      }  mission failed*/
+
+      /* but succcesed by following this */
+
+      .bg-1 {
+        background-image: url(assets/sigma.jpg);
+      }
+      .bg-2 {
+        background-image: url(assets/pic-2.jpg);
+      }
+      .bg-3 {
+        background-image: url(assets/pic-3.jpg);
+      }
+      .bg-4 {
+        background-image: url(assets/pic-4.png);
+        margin-bottom: 100px;
+      }
+      .bg-1,
+      .bg-2,
+      .bg-3 {
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Explore transform and translate</h2>
+
+    <!-- .container*3{Container $}>.inner{Inner $} -->
+    <div class="container bg-1">
+      <div class="inner">God</div>
+    </div>
+    <div class="container bg-2">
+      <div class="inner">Save</div>
+    </div>
+    <div class="container bg-3">
+      <div class="inner">Me</div>
+    </div>
+    <div class="container bg-4">
+      <div class="inner">From</div>
+    </div>
+  </body>
+</html>
